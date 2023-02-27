@@ -3,7 +3,7 @@ import os
 import subprocess
 import ast
 import shlex
-
+import sys
 
 def main():
     try:
@@ -12,7 +12,11 @@ def main():
     except Exception as e:
         print('Error while authenticating with OpenAI, set OPENAI_API_KEY environment variable.')
     
-    request = input('Request: ').strip('\n')
+    if len(sys.argv) != 1:
+        request = " ".join(sys.argv[1:])
+    else:
+        request = input('Request: ')
+    
 
     prompt = f"""# Bash (MacOS)
 # <BEGIN>Show all files in current directory that are larger than 40 mb.<END>
@@ -45,7 +49,6 @@ def main():
     if choice.lower() == 'y':
         for command in command_list:
             subprocess.run(shlex.split(command))
-        # subprocess.run(command_list)
 
 if __name__ == '__main__':
     main()
