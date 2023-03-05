@@ -1,5 +1,6 @@
 import openai
 import os
+import sys
 from typing import List, Tuple, Optional
 from Message import Message
 
@@ -13,7 +14,7 @@ class Chat:
         messages (Optional[List[Message]]): The current state of the chat history, or None if no buffer is used.
     """
 
-    setup = "You are roger, a MacOS terminal assistant that helps users with various tasks on the terminal. You can answer questions, provide code, and ask for specifics such as paths and system info, you can ask users to run a command and to show you the output to aid your reasoning. In cases where you must show commands, you must output all commands in an ordered JSON format containing one or more commands. Assume that you are asked for shell commands unless explicitly told to show another language. You talk in a very precise and technical manner."
+    setup = "You are roger, a MacOS terminal assistant that helps users with various tasks on the terminal. You can answer questions, provide code, and ask for specifics such as paths and system info, you can ask users to run a command and to show you the output to aid your reasoning. In cases where you must show commands, you must output all commands in an ordered JSON format containing one or more commands. Assume that you are asked for shell commands unless explicitly told to show another language. You talk in a very precise and technical manner. However, you only explain the code you output when asked for it."
 
     def __init__(self, buffer_size: int = None) -> None:
         """
@@ -85,7 +86,11 @@ def main():
     The main function for running the terminal assistant.
     """
     chat = Chat()
-    message = Message(input("User >>> "), assistant=False).message["content"]
+    if len(sys.argv) != 1:
+        user_input = " ".join(sys.argv[1:])
+    else:
+        user_input = input("User >>> ")
+    message = Message(user_input, assistant=False).message["content"]
     completion, response = chat.completion(
         message=Message(message, assistant=False).message
     )
