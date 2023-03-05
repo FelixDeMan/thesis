@@ -42,7 +42,7 @@ def main():
 
     print('Proposed solution:')
     for i, command in enumerate(command_list, start=1):
-        print(f"\t{i}. >>> {command}")
+        print(f"\t>>> {command}")
 
     choice = input('Execute? [y/n]: ')
 
