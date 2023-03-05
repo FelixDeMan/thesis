@@ -30,7 +30,7 @@ class Chat:
         self.messages: Optional[List[Message]] = None if buffer_size is None else []
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    def add_message(self, message: Tuple[str, str], assistant=False) -> None:
+    def add_message(self, message: Message) -> None:
         """
         Adds a new chat entry to the chat history, if one is being used.
 
@@ -41,9 +41,6 @@ class Chat:
         Returns:
             None
         """
-        role = "user" if not assistant else "assistant"
-        message = {"role": role, "content": message}
-
         if self.messages is not None:
             self.messages.append(message)
             if len(self.messages) > self.buffer_size:
@@ -70,32 +67,39 @@ class Chat:
         Returns:
             None
         """
-        body = self.messages if self.messages else []
+        body = [m.to_json() for m in self.messages] if self.messages else []
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "system", "content": self.setup}] + body + [message],
         )
+        content = response["choices"][0]["message"]["content"]
+        role = response["choices"][0]["message"]
+        message = Message(message=content, role=role)
 
-        completion = response["choices"][0]["message"]["content"]
-
-        return completion, response
+        return content, response
 
 
 def main():
     """
     The main function for running the terminal assistant.
     """
-    chat = Chat()
+
+    chat = Chat(buffer_size=8)
+
     if len(sys.argv) != 1:
         user_input = " ".join(sys.argv[1:])
     else:
-        user_input = input("User >>> ")
-    message = Message(user_input, assistant=False).message["content"]
-    completion, response = chat.completion(
-        message=Message(message, assistant=False).message
-    )
+        user_input = input("user >>> ")
+    while True:
+        message = Message(user_input, role="user")
 
-    print("Roger >>> " + completion)
+        completion, response = chat.completion(message=message.message)
+
+        print("roger >>> " + completion)
+
+        chat.add_message(message)
+        chat.add_message(Message(message=completion, role="assistant"))
+        user_input = input("user  >>> ")
 
 
 if __name__ == "__main__":

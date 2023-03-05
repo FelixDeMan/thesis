@@ -8,7 +8,7 @@ class Message:
                           If True, the message is from the assistant, otherwise it is from the user.
     """
 
-    def __init__(self, message: str, assistant: bool = False) -> dict:
+    def __init__(self, message: str, role: str = "assistant") -> dict:
         """
         Initializes a new Message object.
 
@@ -22,6 +22,15 @@ class Message:
                   The "role" key's value is either "assistant" or "user" depending on the value of the assistant parameter.
                   The "content" key's value is the message passed to the constructor.
         """
-        if assistant:
+        self.role = role
+        self.content = message
+        if role == "assistant":
             self.message = {"role": "assistant", "content": message}
-        self.message = {"role": "user", "content": message}
+        elif role == "user":
+            self.message = {"role": "user", "content": message}
+
+    def to_json(self) -> str:
+        """
+        Returns a JSON-serializable dictionary representation of the object.
+        """
+        return {"role": self.role, "content": self.content}
