@@ -1,0 +1,782 @@
+Adds execution permissions on a script ./etc/bash_completion within Homebrew home folder path.
+Add prefix like number and "^M${LOGFILE}> " to every non-blank line received on standard input
+all .jpg or .png images modified in the past week
+Answer "y" to all "Are you sure?" prompts from command "cp * /tmp"
+Append " | COUNTRY" to every line in "file"
+Apply script ./group.sed with option --separate to all regular files of the current directory tree
+Archive "/media/Incoming/music/" to "/media/10001/music/" on host "server" and skip files that are newer in the destination, delete any files in the destination not in the source, and compress data during transmission
+Archive "/source" and all files under "folder/" to "/dstfolder/" on host "remoteserver" as user "user" without copying files that already exist
+Archive "source" to "destination" via ssh with "rwX" permissions
+Archive all non-hidden files in the current directory and its sub-directories in the file arch.cpio
+Archive current directory to "/some/path" on localhost, using ssh to authentify as user "me", only update files that are newer in the source directory.
+Archive directory "." to "server2::sharename/B"
+Archive present working directory excluding several files and directories
+calculate the disk usage for all the files which have been modified in the last 24 hours in ~/tmp folder and display the file sizes
+Calculate md5 checksum of '/etc/localtime' and save the first space separated part in variable 'checksum'
+Calculate the MD5 checksums of all files from directory tree //path/to/source/Directory and save them as Output.txt
+Calculate md5 checksum of the list of all files/dirs in /path recursively including dot files and excluding the patterns 'run', 'sys', 'tmp' and 'proc', then check the checksum against the checksum saved in /tmp/file
+Calculate the md5 sum of "exampleString"
+Calculate md5 sum of file $ecriv
+Calculate the sum of the 7th column of "ipcs -mb"
+Calculate the sum of all the numbers from 1 to 10
+Calculate the sum of all the numbers from 1 to 10
+Calculate the sum of all the numbers from 1 to 10
+Catch output from a script printing to /dev/tty
+Change directory to the download directory specified in the current user's user-dirs.dirs file
+Change directory to the download directory specified in the current user's user-dirs.dirs file
+Change directory to the output of command '~/marker.sh go "$@"'
+change the group of all the files which belong to the user edwarda to pubs
+Changes group ownership of /sys/class/gpio/export and /sys/class/gpio/unexport to 'gpio'.
+Change the owner and group of "testfile.txt" to "root"
+change owner of the file file.sh to user root
+Change owner to "root" and group to "wheel" of "adbind.bash"
+Change the ownership of all aluno1's files in the current directory and below to aluno2
+change the permission of all the php files in the folder /var/www/ to 700
+Checks compressed file integrity.
+Check if "$file" contains DOS line endings
+Check if "/path/to/file" exists on remote host "host"
+Check if "~/mnt/sdc1" is mounted
+Check if a drive with UUID "$UUID" is mounted
+Check if a drive with UUID "09b8f1ab-8d4b-4c5f-b395-40be09c090b0" is mounted
+Check the syntax of all PHP files under the current directory
+Clone the permissions of "$srcdir" to "$dstdir"
+Compares two listings 'ls' and 'ls *Music*', showing only strings that unique for first listing.
+Compress "archive.tar"
+Compresses all files in the directory 'PATH_TO_FOLDER' without recursion and keeps uncompressed files from deletion.
+Compress every file in the current directory that matches "*cache.html" and keep the original file
+concatenates file1.txt, file2.txt, and file3.txt with the filenames printed at the beginning of file contents
+Concatenate with a space every other line in "input.txt"
+Continuously send "ok" plus newline to the program "recalcitrant.php"
+Convert *.au files to *.wav files using `sox'
+Convert *.doc files in the current directory tree to the .txt format and remove the original files
+Convert the contents of 'var1' variable to lowercase
+Convert the first 1024 bytes of "/dev/urandom" to a string of hexadecimal bytes
+Copy "./export" recursively to "/path/to/webroot" preserving permissions
+Copy "/new/x/y/z/" over the network to "user@remote:/pre_existing/dir/" preserving the directory hierarchy
+Copy "src/prog.js" and "images/icon.jpg" to "/tmp/package/" keeping relative path names
+Copies all files like 'lib*.so' to '~/usr/gtest/lib/' directory.
+Copy current working directory to clipboard
+Copy the file foo.sh into /tmp of the docker container
+Copy local file "file" via ssh to remote "host" path "/directory/"
+Counts all files in a current folder and in subfolders one-level lower, and sort folder list by number of files within.
+Count all the lines of all '*.c' files in current directory recursively
+Count files in $DIR_TO_CLEAN that are older than $DAYS_TO_SAVE days
+Counts lines in file 'filename' ignoring empty lines and lines with spaces only.
+Counts lines of 'command' output.
+Counts number of *.php files in a current folder and subfolders.
+Count the number of areas that differ in "file1" and "file2" with 0 lines of unified context
+Count the number of equal lines in "file1.txt" and "file2.txt"
+Count the number of files named `file1'
+Count number of lines in all files matching "*R1*.fastq.gz"
+Count the number of the regular files residing under and below ./randfiles/
+Count the number of regular files with case insensitive name pattern $srchfor under 'teste2' directory tree
+Counts total number of lines in a git repository.
+Create 256 directories named from '00' to 'ff', each containing 256 subdirectories named '00' to 'ff'.
+create a backup of all the files in the file system which belong to the suer edwarda to the floppy
+create a compressed archive "compressFileName.tar.gz" with verbose output
+create a compressed archive "filename.tar.gz" with verbose output
+Create a compressed archive from "www" and split the contents into files of at most 1073741824 bytes and use prefix "www-backup.tar."
+create a compressed archive with files newer than 1st of January 2014, 18:00:00.
+Create a ssh key and store it in the file ~/.ssh/apache-rsync
+Create a ssh key of RSA type, and prompt for a filename to store it, presenting the default for this type of key as $HOME/.ssh/id_rsa
+Create a symbolic link in directory "~/newlinks" for each file listed in "results2.txt"
+create a symbolic link named "-pdf-kundendienst" to "local--pdf-kundendienst" file
+Create a symbolic link named "/usr/bin/my-editor" to "/usr/share/my-editor/my-editor-executable" and attemp to hard link directories
+Create a symbolic link named "temp" to "newtarget"
+Create a symbolic link to "$file" named "/tmp/allfiles"
+Create a symbolic lnk named "$1/link" to "$dir"
+Create all directories in the path specified by variable $tempWork
+create directory aaa/bbb
+Create directory dir2
+Create symbolic links in the current directory for all files located in directory "/path/with/files" with a name containing "txt"
+Creates temporary directory in '/tmp/' folder and saves path to it in 'my_tmp_dir' variable.
+Creates temporary file in a current folder and saves path to it in 'f' variable.
+Creates temporary file in a TMPDIR folder or /tmp folder if TMPDIR doesn`t defined, with file name like current shell name and '-XXXXX'-formatted suffix, and saves created path to the 'tempFile' variable.
+Creates temporary file, replacing XXXXXXXXXXXXXXXXXXXXXXX with equal length suffix.
+Creates temporary folder, and saves current folder path   joined with created temporary folder path in 'tdir' variable.
+Delete all directories in minimum 2 levels down the root directory
+Delete all files/directories older than 48 hours in /path/to/files* paths
+Delete all files/directories under current directory tree with '.$1' extension where $1 expands as the first positional parameter
+Delete all files/directories with node number $inum under current directory tree
+Delete all the files found in the current directory tree whose names begin with "heapdump"
+Delete all the files found in the current directory tree whose names begin with "heapdump"
+Delete all files (files, directories, links, pipes...) named 'core' under current directory
+delete all the normal files in the current folder and do not delete those in the subfolders
+delete all text files in the entire file system
+delete all the trace files (".trc") from the folder $DBA/$ORACLE_SID/bdump/ which have not been accessed in the last 7*24 hours
+delete all the trace files (".trc") which have not been been accessed in the last 30*24 hours
+Delete current cron job list, and use those in yourFile.text
+Delete in the background all files in /var/tmp/stuff1 and below that have not been modified in over 90 days
+Delimit standard input with ":" and display as a table
+Display a dump of standard input as floating point values of double size
+display a long listing of all the files in the current folder which are bigger than 10KB
+display a long listing of all files in the entire file system which are bigger than 1MB
+display a long listing of all the java files in the current folder in sorted order
+display a long listing of all the log files in the current folder which are bigger than 1MB
+display all the ".c" files in the folder "/home/david" which have been accessed in the last 48 hours
+display all the details of empty files in current folder
+display all the files along with their group name in the folder /home which do not belong to the group test
+display all the files in the current folder and do not search in sub directories and move them to the directory /directory1/directory2.
+display all the files  in the current folder excluding the current folder and do not search in the sub directories
+display all files in current folder excluding text files
+display all the files in the current folder which contains form feed (^L) and does not contain NULL
+display all the files in the current folder which hare in the sub directory trees of the folders which begin with the word "kt" followed by a digit
+display all files in the current folder which start with met
+display all the files in the file system which are present in nfs system
+display all the files in the folders /etc /srv excluding the paths /etc/mtab and  /srv/tftp/pxelinux.cfg
+display all the files in the folder /home which do not belong to the group test
+display all the files in the folder /home which do not belong to the group test
+display all the files in the folder /home which have the setuid bit enabled
+display all the files in the usr folder and those that are in the path local
+display all file names in current folder
+display all files which have been modified between two dates in current folder
+display all the log files in the folder /var/log, print0 is used to handle files with only spaces in their names or which have newlines in their names and discard all the errors
+display all the regular files in the current folder that are modified after the file "file.log"
+display all the regular/normal files in the current folder which have been modified in the last 24 hours
+display all the regular files in the folder "$(FOLDER)" which are modified in the last $(RETENTION)*24 hours and excluding hidden files
+display all normal/regular files in the folder "$ORIG_DIR"
+display all regular files in the folder image-folder
+display all the text files and pdf files in the current folder
+display the contents of all java script files in a folder and save the output to a file
+display the contents of all the regular files in the current folder and save the output to out.txt
+display the contents of all the regular files in the current folder and save the output to out.txt
+display the contents of all the regular files in the current folder and save the output to out.txt
+display the contents of all the regular files in the current folder and save the output to out.txt
+Display current system's kernel name, kernel release and version, and machine architecture
+Display differences between directories dir1 and dir2, treating absent files as empty.
+display files in current folder ending with "pdf" or "PDF"
+Display the file size of file '/data/sflow_log' in bytes
+display in a list of all the files that are bigger than 10KB in current folder
+Displays info about users currently in system.
+display list of all the regular/normal files in the home folder which are bigger than 512 kb
+display list of all the regular/normal files in the home folder which are exactly 6579 bytes
+display long listing of all the text files in the current folder and then execute the script myScript.sh by passing the output of previous exec as input
+display the number of lines in all the ".c" files in the current folder
+display the number of lines in all the ".c" files in the current folder
+display the number of lines in all the ".c" files in the current folder
+display the number of lines in all the files in the current folder
+display the number of lines in all the files in the current folder
+Display permissions, user, group, and full path for each file in the current directory tree
+Display the sizes and filepaths of all files/directories with '.undo' extension under current directory tree
+Display total apparent size of a file
+Download 10 web pages "http://example.com/?page${i}.html" at most 2 at a time with "${i}" ranging from 1 to 10
+download content from "http://127.0.0.1:8000" and output to "index.html"
+download contents from "https://www.npmjs.com/install.sh" and execute
+Dump "/dev/ttySomething" in both hex and text
+Dump "a\0b" as hexadecimal bytes
+Dump all MySQL databases over an ssh tunnel to "user@yoursever.com" and use it as input to mysql
+Dynamically defines tmux session name to attach to.
+Enables shell option 'cdable_vars'.
+ERROR - this is for DOS
+Exclude directory from find . command
+Execute "./my_script.sh" every 3 seconds and highlight the differences in successive runs
+Execute "bash -c your_script" every 2 seconds
+Execute "du -s path" every 300 seconds
+Execute "myfile" on all .ogv files from the current directory tree
+Execute "myfile" on all .ogv files from the current directory tree
+Execute "ps -mo pid,tid,%cpu,psr -p \`pgrep BINARY-NAME\`" every half second displayed with no title and highlighting the differences
+Execute python script "test.py" with "LD_PRELOAD=./linebufferedstdout.so" and write the output to console and append to "test.out"
+Export variable "JAVA_HOME" as symlink resolved absolute path of "/usr/bin/javac" with "/bin/javac" removed
+extract "filename.tar.xz" with verbose output
+Extracts 258 lines beginning from line 16482 of in.sql and saves them to out.sql
+Filters out strings, using the extended regexp pattern '^#|^$|no crontab for|cannot use this program' from "$USERTAB"
+filter output of bind -p by regex
+Find *.c files under $HOME and search for the string 'sprintf' in those files
+Find *.css files in the current directory tree, skipping all directories that match pattern '*/lang/en.css'
+Find *.scm files recursively in the current directory
+Find .cpp files that differs in subdirectories PATH1 and PATH2.
+Find a 400 permission file under /data directory
+Find all "G*.html" files modified more than 7 days ago in the current directory tree
+find all the "passwd" files in the entire file system
+Find all $tofind* files/directories under $parentdir
+Find all *.c files in /usr/src bigger than 100k
+Find all *.cgi files/directories under current directory and change their permission to 775
+Find all *.coffee files under /some/path and run 'perl /path/to/your/program' with all of the file paths as its arguments
+find all the *.conf files under / (root)
+Find all *.dbf files/directories in entire file system discarding errors and print their sorted and unique parent directory paths
+Find all *.log files under current directory that contain the string "Exception"
+Find all *.ps files under $STARTDIR and run ps2pdf for each files with the file path as a argument
+Find all *.rb files/directories under current directory
+Find all *.rb files/directories under current directory
+Find all *.rb files/directories under current directory
+Find all *.so files/directories under current directory and run myCommand with the file/directory paths as its argument, then search for ExpectedResult in the output
+Find all *.so files under current directory and search for mysymbol in their symbol tables
+Find all *.sql files in maximum 1 level down the current directory, process it with sed and then send the output to a mysql command
+Find all *.sql files in maximum 1 level down the current directory, process it with sed and then send the output to a mysql command
+Find all *.sql files in maximum 1 level down the current directory, process it with sed and then send the output to a mysql command
+Find all *.sql files in maximum 1 level down the current directory, process it with sed and then send the output to a mysql command
+Find all *.sql files in maximum 1 level down the current directory, process it with sed and then send the output to a mysql command
+Find all *.tex files/directories in maximum 2 levels down the current directory
+Find all *.txt files/directories under current directory and execute process once with all of them as arguments
+Find all *.txt files/directories under current directory and execute process once with all of them as arguments
+Find all *.txt files under the current directory whose names are not "File.txt"
+Find all *.txt files under the current directory whose names are not "File.txt"
+Find all *Company* files/directories under /root/of/where/files/are directory
+Find all .* files excluding list_files (case insensitive) under current directory
+Find all .bak files starting from the current directory and delete them
+Find all .gif and .jpg files in the /var/www directory tree
+Find all .txt files in the current directory tree on a BSD system and edit them with `vim'
+Find all .zip files starting from the current directory which are owned by user tommye
+Find all /path/to/check/* regular files without descending into any directory
+Find all 400 permission files under /data directory with null character as the delimiter
+Find all 777 permission files/directories under current directory tree
+Find all Lemon*.mp3 files under current directory and run mplayer with these files
+Find all Lemon*.mp3 files under current directory and run mplayer with these files
+Find all Lemon*.mp3 files under current directory and run mplayer with these files
+Find all catalina* files/directories under current directory
+Find all directories at level 3 of directory tree $from_dir
+Find all directories in 1 level down the current directory
+Find all directories in current directory (non-recursive) excluding . and print a sorted list in the file a
+Find all directories in the current directory tree that were last modified more than 5 minutes ago but less than 60 minutes ago
+find all the directories in the file system which begin with "man"
+Find all directories in maximum 2 levels down the /tmp/test directory
+Find all directories starting from / that have permissions 777
+Find all directories starting from YOUR_STARTING_DIRECTORY that contain the string "99966" in their names
+find all directories that names are 'apt' and display details
+Find all directories under 'A' directory tree excluding paths containing the directory 'a'
+Find all directories under /path/to/base/cache, /path/to/base/tmp, /path/to/base/logs  and change their permission to 755
+Find all directories under minimum 1 level down the  $GIVEN_DIR directory
+find all directories with the name like "????-??-??" and which have not been modified in the last 24 hours in the folder /volume1/photo/ipcam and send them as input to the script in the exec section
+Find all files/directories following symlinks under /path/to/dir/* paths and print the timestamp in YmdHMS format along with their paths
+Find all files/directories in 1 level down the current directory
+Find all files/directories in current directory and execute myscript for each of them
+Find all files/directories in level 1 down the $queue directory with all positional parameters appended with the find command
+Find all files/directories named 'file' and print them with null character as the delimiter instead of newline
+Find all files/directories named 'foo' under current directory tree without descending into directories named 'foo'
+Find all files/directories named orm.properties under current directory
+Find all files/directories starting with 'app-' and ending with '.log' in their names and have been modified in the last 5 minutes
+Find all files/directories that belong to the group 'audio' under '/dev' directory tree
+Find all files/directories that do not contain 'photo' in their names under current directory tree
+Find all files/directories under '/var/log' directory tree that bave been modified today (from the start of the day)
+Find all files/directories under 'my key phrase' directory
+Find all files/directories under /home/feeds/data directory
+Find all files/directories under /path directory that were modified more than 30 minutes ago
+Find all files/directories under /path/to/dir/* paths and print the timestamp along with their paths and stat them
+Find all files/directories under _CACHE_* directories
+Find all files/directories under current directory
+Find all files/directories under current directory
+find all files and directories under the current directory and display the inode of each one, using printf
+find all files and directories under the current directory and display the inode of each one, using the stat command on FreeBSD/OSX
+Find all files/directories under  current directory and rename them by replacing all blank spaces with _ in their paths
+Find all files/directories under current directory and set their permission to 775
+Find all files/directories under current directory that are 10MB in size
+Find all files/directories under current directory tree that contain 'pattern' in their names
+Find all files/directories under current directory tree that start with 'R' and end with 'VER' in their names and were modified more than 1 day ago
+Find all files/directories under whatever and ... directory and copy them to /var/tmp
+Find all files/directories with name pattern $nombre that are at most 2 levels down the $DIR_TEMPORAL and $DIR_DESCARGA directories and show only the file names (without parent path) appended with '.torrent'
+find all the files ending with jpg in current folder and display their count ( case insensitive )
+find all the files ending with jpg in current folder and display their count ( case insensitive )
+Find all files in /tmp whose names begin with the current user's name followed by "."
+Find all files in /var/www/html/zip/data/*/*/*/*/* that are older than 90 days
+Finds all files in a '/path' folder and prints long listing for them.
+Find all files in current directory and execute command1 and command2 for each file
+Find all files in current directory excluding hidden files, archive them and put the output into variable  full_backup_dir
+find all the files in current directory of size smaller than 10KB.
+Find all files in current directory that were modified less than 1 day ago, and create cpio archive in $backup_dir
+Find all files in the current directory tree that were last changed $minutes minutes ago
+find all the files in the current directory which have been modified in the  last 6 days.
+find all the files in the current folder which are bigger than 9MB
+find all the files in the current folder which are exactly 1234 bytes
+find all the files in the current folder which are writable
+find all the files in the current folder which end with "ext1" or "ext2" or "ext3"
+Find all the files in entire file system with the extensions txt or doc, as well as any file larger than 5MB in size
+find all the files in the file system that start with "win" and searched only in the mounted file systems
+find all the files in the folder /work which belong to the user "olivier"
+Find all files in your home directory and below that are exactly 100M.
+find all the files in the home folder that have been modified between 24 to 48 hours
+find all files in home folder which have been modified after a timestamp
+find all the files in the home folder which end with ".tex"
+find all the files in the root folder which have been modified in the last 24 hours and print them
+Find all files named "file.ext" within the current folder and print the path where each one is located
+Find all files named 'Makefile' in the /usr/ports directory tree and count the number of lines in them matching regular expression '^MASTER_SITE.*CPAN'
+Find all files named 'file' in 1 level down the current directory whose status were changed more than 1 day ago
+Find all files newer than httpd.conf under and below the current directory
+find all the files that are modified in the last 1 day
+Find all files that are set group ID to 10
+find all the files that have been modified exactly 1 day ago
+find all the files that have been modified in exactly 7*24 hours ago
+find all the files that have been modified in the last 24 hours
+find all the files that have been modified on a specific day and copy them to another directory
+Find all files that belong to group developer
+Find all files under /home/username/public_html/sites/default/files and set their permission to 660
+Find all files under /path/to/Dir and set their permission to 644
+Find all files under /path/to/dir and change their permission to 644
+Find all files under /path/to/dir that were modified less than 7 days ago and show only first several lines of output
+Find all files under /path/you/need, calculate their md5sums and redirect the results to checksums.md5
+Find all files under and below the current working directory with the word California in the file (case insensitive), and count the number of lines in the output
+Find all files under and below the current working directory with the word California in the file, and count the number of lines in the output
+Find all files under and below the current working directory with the word California in the file, and count the number of lines in the output
+Find all files under current directory and set their permission to 775
+Find all files under current directory and set their permission to 775
+Find all files under current directory that match the case insensitive regex .\|./.git and replace all occurrences of the regex $1 (literal) with $upper2 (literal) in these files
+Find all files under current directory whose file type description contains "image", display only path to each file.
+Find all files under dir and calculate their md5sum and save the output to dir.md5
+Find all files under dir and calculate their md5sum and save the output to dir.md5
+Find all files under directory tree /path/to/dir whose permissions are not 644
+Find all files under directory tree /path/to/dir whose permissions are not 644
+Find all files which  begin with 'a' or 'b' from current directory downwards and print them.
+find all the files which end with ".deb" and display their base name (strip the extension)
+find all the files which end with ".deb" and display their base name (strip the extension)
+find all files which name contain 'foo' and path is not dir1 or dir2
+Find all files whose names begin with 'Makefile' in the /usr/ports directory tree and count how many of them contain 'QTDIR'
+find all files with the first letter “e” or “f” and last one x in /usr/bin directory:
+Find all filenames ending with .c in the current directory tree, case insensitive
+Find all image.pdf files/directories under ./polkadots with null character as the delimiter
+find all java files in the current folder and search for the pattern REGEX
+find all the jpg images in the folder /path/to/files which have been modified after after the file "timestamp" and convert them into pdf.
+find all js files which path does not contain ./node_modules/* nor './vendor/*"
+find all the links in the directory students and print them. Do not display any errors.
+find all the links that have been modified on a specific day and copy them to another directory
+Finds all the log* files recursively in /myDir that are more than 7 days older and compresses them.
+Find all of the character devices on the system
+find all of the files that are readable
+Find all orm* files/directories under current directory
+Find all pdf files in /path and search for "your pattern" in the converted text output and print the paths to the matching files
+find all the pdf files in current folder and create a tar ball of all these files
+Find all pdf files under /dir/containing/unsigned with null character as the delimiter
+find all the php files in current folder using regular expressions
+Finds all php processes running in system.
+find all png files in the current folder
+find all the python files in the current folder and save the list to the file output.txt
+find all readable files
+Find all regular files in the current directory tree and count them
+Find all regular files in the current directory tree and count them
+Find all regular files in the current directory tree whose names are "YourProgramName", change to the directories they are in, and execute them with parameter "YourParameterFile"
+Find all regular files under current directory non-recursively that have execute permission set for all (user, group and other)
+Find all regular files whose names contain "@" in directory tree ~/$folder
+Find all regular files whose names contain "@" in directory tree ~/$folder
+Find all regular files whose names contain a case insensitive pattern composed of space separated positional arguments and display a long listing of them
+Find all strings matching pattern "^${KEY}${DELIMITER}" in $FILE file and print rest of string after $DELIMITER
+Find all SUID and SGID files on the system and save the list of them to `setuid.txt'
+Find all symbolic links under current directory that are not hard links
+find all the text files in the current folder starting with "somefiles-"
+Find all TXT files in the current directory and copy them to directory "$HOME/newdir"
+Find all TXT files in the current directory and copy them to directory "$HOME/newdir"
+Find all TXT files in the current directory and copy them to directory "$HOME/newdir"
+find the biggest files only (but not directories)
+This find command ignore the case when searching for file name , to ignore the case  in this example all .py & .PY file will search
+Find command will display top 5 small files from curent directory . most probably you will get ZERO  bytes files .
+Find directories in the current directory (no sub-directories) and print them appended with a string literal 'Directory: '
+Find directories under maximum 1 level down the directory $dir with 100 permission that are owned by the user $username
+Find the directories whose names contain "New Parts" at level 3 of the current directory tree and create symlinks to them in /cygdrive/c/Views
+Find files/directories containing 'test' in their names and display the directory contents before the directories themselves
+Find files/directories that have not been modified in the last one day in directories or files taken from the glob pattern '/tmp/test/*'
+Find files/directories under '/dir' directory tree that are newer than 'yesterday.ref' file and older than 'today.ref' file by modification time
+Find files by type
+Find files containing string "#!/bin/ksh" and append their names and matching strings to /tmp/allfiles
+Find files containing string "#!/bin/ksh" and append their names and matching strings to /tmp/allfiles
+Find files in the /var/log folder which were modified an hour or more ago
+find files in a directory and exit the command if the syntax is correct or display invalid command if the syntax is wrong.
+Find the files in the current directory that match pattern '*.JUKEBOX.*.txt' and move them to folder ./JUKEBOX
+Find files in the current directory tree of size between 700k and 1000k
+Find files in the current directory tree whose permissions are 775
+find files in home directory that names are game
+Find files named "needle" ignoring the case
+Find files on the system modified more than 90 minutes ago
+Find files on the system that are bigger than 20 megabytes
+Find file size in blocks
+Find files that are writable by both the “other” and the group
+Find files that are writable by both the “other” and the group
+Find files that were modified 7 days ago and archive them
+find files under the current directory called "foo" or "bar"
+find file which name like 'foo.*' in current directory.
+Find files with inode number 199053
+find the file with the name "esxcfg-firewall" in the current folder
+Find grub.conf files in entire file system discarding errors in csh or tcsh shell
+find in $HOME files ending in "txt" and do nothing with them, or files ending in "html" and list them null separated.
+Find links to any file that happens to be named `foo.txt'
+Find links to any file that happens to be named `foo.txt'
+find the oldest normal file in the current directory
+find the oldest normal file in the current directory
+Finds recursively all folders in current folder which path not contains "NameToExclude" string and removes only ones without files and another folders within.
+Find regular files named "expression -or expression" under and below /dir/to/search/
+Finds shell options like 'checkjobs' with their state.
+Find SQL files with text `expression'
+Find the string 'joomla' case insensitively in all the php and html files under current directory tree and display the matched lines along with the file names and line numbers
+Find suspicious PHP files
+Find UTF-8 files with BOM
+For each line of the sorted output of both file1 and file2, print lines whose first field of file2 does not appear as first field of file1.
+Force create a symbolic link named "$*" to the canonical absolute path of "$1"
+Force create a symbolic link named "$lines" to "$c" without dereferencing "$lines"
+Force create a symbolc link named "new_dir" to "/other/dir" without dereferencing "new_dir"
+force remove all the regular/normal files which begin with sess in the temp folder
+Format the output of "printf ..." to fit in 80 characters per line
+Generate a random 32 ASCII character password from /dev/urandom and save it to variable 'pass'
+Generates a randomly sorted list of numbers from 1 to 10.
+Get a list of all files in the /home directory tree and their coressponding inode numbers
+Get a path name of a process id
+Gets all man entries beginning with std and sends them to vi.
+Get domain "$domain" IP address
+Gets IP address of ${NET_IF} network interface.
+gives the chars in line 5 and chars 5 to 8 of line 5, in tst.txt
+Go into the first directory whose name contains 1670
+Go into the first directory whose name contains 1670
+Go into the first directory whose name contains 1670
+Go to /tmp directory.
+Go to directory /cygdrive/c/Program Files (x86)/$dollarsign using single quotes to escape special characters, including dollar signs
+Go to directory named "~" (not home directory)
+Go to directory named "~" (not home directory)
+Installs package 'mysql'.
+Join strings from 'file1' and 'file2', discarding excessive strings from largest file, and printing first, second and third space-separated field from first file, and third and fourth field from second file as a join result
+kill a number of background jobs
+Limits the number of results from grep to 2 lines
+list *.pdf, *.bmp and *.txt files under the /home/user/Desktop directory.
+list all aliases
+List all environment variables (name and value) whose name either equals PATH or starts with GOBIN
+List all environment variables whose name starts with PATH, showing the name and value of each one.
+List all files and directories from the current directory tree
+List all files/directories under current directory matching the posix-egrep type regex ".+\.(c|cpp|h)$" in their names excluding the files that contain 'generated' or 'deploy' in their paths
+List all file details with filenames matching "*2012*.xml" from "serveripaddress::pt/dir/files/" listening on port 111 and write to "output.txt"
+Lists all files in a '/home/dreftymac/' folder and subfolders without recursion.
+List all files in current directory whose name or file type description contains the word "ASCII".
+List all files with their paths that have identical content.
+list all samba files in /var/l* directory ( /var/lib or /var/log )
+List all SGID and SUID files in entire file system
+Lists all subdirectories in the current directory
+List the directory paths of all file.ext files under present working directory
+List files in the current directory and below that are exactly 1234 bytes in size
+List files in the current directory that have at least one duplicate
+List files larger than 9MB residing in the current directory and below
+List files under $CURR_DIR which were modified, accessed or whose status were changed $FTIME ago and sort them and remove duplicate entries
+List files with C-style escape sequences for non-alphanumeric characters
+List the largest file prefixed by its size in bytes of all files under the current directory
+List the last modified file under "$DIR"
+List only the non-hidden empty files only in the current directory.
+Lists tmux sessions.
+List the unique parent directories of all .class files found under "/root_path"
+List unique series of 3 characters in file "$1" prefixed by the number of occurrences and sorted from most frequent to least frequent
+Locate all files in the current directory and below that do not have "testfileasdf" in their names
+Locate logo.gif in the /var/www directory tree
+login as user postgres
+login as user postgres
+login as user username
+Login to remote system "app1" through an ssh gateway system called "gw"
+(Linux-specific) Look for any instance of "ds1337" in the modules.alias file matching current kernel release
+Make a directory in the current working directory with a random 32 alphanumeric character name
+Make a directory in the current working directory with a random 32 alphanumeric character name
+Make a new directory "new-dir" in every directory in the current directory tree
+Make directories to "$TARGET_PATH" as needed without causing an error if it exists
+Make directories to "/tmp/boostinst" as needed and print a message for each created directory
+Make regular files from debian/fglrx-amdcccle/usr/lib/fglrx/bin/ executable for all
+To match only hidden dot directories
+Mathematically sum each line in the output of "..."
+Mathematically sum each line in the output of "..."
+Merge colon-separated information from file1 and file2 where second field of both files matches, sorting the result based on this field - for each line, output: first 3 fields of first file, followed by first 3 fields of second file.
+Merge each non-blank line of standard input into a single comma separated line
+Merge lines from "file_1" and "file_2" and format the output as a table with tab separators
+Mount "cpuset" filesystem on "/cpuset/"
+Mount "tmpfs" filesystem to "/path/to/dir"
+Move "file.txt" to docker container "$COUNTAINER_ID" in path "/var/lib/docker/aufs/mnt/$CONTAINER_ID/rootfs/root/file.txt"
+Move *wp-admin/index.php files to *wp-admin/index_disabled under /var/www/
+Move all *$lower1* files/directories under current directory to paths formed by replacing the match of $lower1 with $lower2 in their paths
+Move all *foo* (case insensitive) directories under current directory to new paths obtained by replacing all occurrences of 'foo' (case insensitive) with 'Bar' in their paths
+Move all files and directories in the current directory to "$TARGET" excluding files matching "$EXCLUDE"
+Move all files that contain "Subject: \[SPAM\]" to "your_file"
+Numerically sort each line in file "out" and print the result to console
+Numerically sort file "file.dat" by the second word of each line and output from greatest value to least value
+Numerically sort file "file.dat" by the second word of each line and output from greatest value to least value
+only get md5sum of a file
+Output two lines of "-tcp"
+Output two lines of "-tcp"
+Output the string 'yes' continously until killed
+Output success.txt omitting lines whose first field appears in fail.txt - lines in fail.txt must appear in the same order as they do in success.txt.
+Pass "y" to all the prompts for the command "execute_command"
+Pass numbers 1 to 100000 as arguments to "/bin/true"
+Perform a default Plesk configuration
+Ping all hosts in file "ips" twice
+Ping all hosts in file "ips" twice
+Ping the broadcast address "10.10.0.255"
+Prepend date to ping output to google.com
+Prints "$NEWFILE" to the terminal and file '/etc/timezone' as a root user.
+Print "Mounted" if /mnt/myUSBdisk exists on a mounted file system or print "Not mounted" otherwise.
+Print "Shared Memory" if shared memory mounted at /tmp or print "Not Shared Memory" otherwise.
+Print 'This should print the filename twice if an implicit -print is applied: ' appended with file paths for all files named 'file' under current directory tree
+Print a count of all unique lines in "ports.txt" sorted from most frequent to least frequent
+Print a hex dump byte to byte of the output of "echo Aa"
+Print a hex dump of "$DIREC" as characters
+Print a line of 100 '=' characters
+Print a line of 100 '=' characters
+Print a list of all filepattern-*2009* files/directories under data directory to filesOfInterest.txt file
+Print a list of regular files from directory tree sort_test/ sorted with LC_COLLATE=C
+Print a NULL-separated list of all hidden regular files from the home directory
+Prints a random number between 2000 and 65000
+Print a single line of numbers from "001" to "100"
+Print a sorted list of unique directory paths in entire file system that match the pattern '<name_pattern>' in their names
+Print absolute path of "YOUR_PATH"
+print all active readline keybindings
+Print all files/directories with their sizes under $WHATEVER directory tree
+Print all lines from file 'report.txt' containing any-cased 'error' pattern
+Print appended data in "/var/log/some.log" that match "foo" and "bar"
+Print the average round trip time of 5 pings to "google.com"
+Print the base name of the current working directory
+Print the base name of the current working directory
+Print the base name of the current working directory
+Print the base name of the current working directory
+Print the base name of the current working directory
+Print the basename from a colon separated path 'a:b:c:d:e'
+Prints calendars of July, 2009 and July, 2010 side-by-side.
+print command for alias "list" with low priority command
+Print common lines in sorted files "ignore.txt" and "input.txt"
+Print the contents of "/tmp/nums" as input to "addnums"
+Print the contents of "Little_Commas.TXT"
+Print contents of "file" as space separated hexadecimal bytes on a single line
+Print contents of "file" as space separated hexadecimal bytes on a single line
+Print content of 'whatever' file
+Print CPU usage and memory usage of all unique processes on a system
+Print the current directory tree with file permissions
+Print the current user name and inode number of "/home"
+Print the day at 1 day ago in 2 months from now
+Print each character in "orange" on a new line
+Print each character of "abcdefg" on a line
+Print each line in "f1" and "f2" separated by a space and "f3" separated by a tab
+Print equal lines in compressed files "number.txt" and "xxx.txt"
+Print the file content of command "[whatever]"
+Print the file content of command "f"
+Print the file content of command "f"
+Print file extension assuming there is only one dot in the file name.
+Print the file size and directory size in human readable format of the current directory tree 2 levels deep
+Print the files under current directory twice per line
+Print the filenames taken by the glob pattern * with null character as the delimiter
+Print the first 32 hexadecimal characters from "/dev/urandom"
+Print the first 5 decompressed lines of compressed file "$line"
+Print full path of command "c++"
+Print the full path of command "cc"
+Print the full path of command "rails"
+Prints full path to files in a current folder.
+Prints full path to files in a current folder.
+Prints full path to files with dot in name in a current folder.
+Print help on 'cat' command usage
+Print the IP addresses for the current host name
+Print the IP addresses for the current host name
+Print the IP addresses for the current host name
+Print the IP addresses for the current host name
+Print the last 1000 lines of all files matching "/var/spool/cron/*"
+prints the last non-empty line of a file
+prints the last non-empty line of a file
+Print the list of all regular files residing in the current directory and below
+Prints long listing of content in a root folder, including hidden files, with human-readable sizes, and stores output to '/root/test.out' file.
+Prints long listing of content in a root folder, including hidden files, with human-readable sizes, and stores output to '/root/test.out' file.
+Prints long listing of content in a root folder, including hidden files, with human-readable sizes, and stores output to '/root/test.out' file.
+Prints long listing of content in a root folder, including hidden files, with human-readable sizes, and stores output to '/root/test.out' file.
+Prints name of temporary file but doesn`t create nothing.
+Prints the Nth line of output from 'ls -1'
+Prints the Nth line of output from 'ls -1'
+Prints number of files with extension "${EXTENSION}" in the "${SEARCHPATH}" directory.
+Print only common strings in content of files 'file1.sorted' and 'file2.sorted'
+Print the paths of the directories from the paths expanded by the glob pattern /path/to/directory/*
+Print the physical current working directory
+Prints the PID, PGID and command name of the process with the name 'test' every second
+Prints process tree of a bash process.
+Print revesed second from the end dot-bounded field in $i value
+Print second section of space-separated data from text file "a".
+Print shared lines in "number.txt.gz" and "xxx.txt.gz"
+Print sub domains of "mydomain.com"
+Print summary of new/missing files, and which files differ between dir1 and dir2.
+Print timestamp as HH:MM:SS
+Prints top-ten biggest top-level folders within a 'var' folder.
+Print total size of file systems in kilobytes.
+Print unique lines in sorted file "a.txt" compared to sorted file "b.txt"
+Print which files differ between dir1 and dir2, treating absent files as empty
+Put the output of tty into a variable, then searches the output of "who" for TTY with "/dev/" removed and saves it to "WHOLINE"
+Read a line from an interactive shell's standard input into variable "message" without backslash escapes and prompt $'Please Enter a Message:\n'
+Read a line from standard input and save each word in the bash array variable "first"
+Read a line from standard input into variable "REPLY" with prompt "> $line (Press Enter to continue)"
+Read a line from standard input into variable "YESNO" ignoring backslash escapes and using the prompt "$(echo $@) ? [y/N] "
+Read a line from standard input into variable "message" with prompt "Please Enter a Message: " followed by a newline
+Read a line from standard input into variable "message" with prompt "Please Enter a Message: " followed by a newline
+Read a line from standard input with prompt "<Your Friendly Message here> : y/n/cancel" and save the response to variable "CONDITION"
+Read a line from standard input with prompt "Are you sure? [Y/n]" and save response in variable "response"
+Read a line from standard input with prompt "Is this a good question (y/n)? " and save the response to variable "answer"
+Read the contents of "${some_variable}" until a null character is found and save the result in variable "content"
+Read the first line in "$1" and save each word in the bash array variable "to_sort"
+Read the history file and append the contents to the history list
+Recursively change "/usr/local" owner to the current user and group to admin
+Recursively change the owner and group of "subdir2" to "user2"
+Recursively change owner to "tomcat6" of "webapps", "temp", "logs", "work", and "conf"
+Recursively copy /path/foo on host "prod" to local directory "/home/user/Desktop", connecting as ssh username corresponding to local username.
+Recursively copy all files and directories matching "*ela*L1*TE*" in localhost's directory /tdggendska10/vig-preview-dmz-prod/docs/sbo/pdf/ to /var/www/html/sbo/2010/teacher/ela/level1 on localhost connecting as ssh user "dalvarado", in batch mode (no prompt for passwords) preserving file permissions and timestamps, and without displaying progress information.
+recursively copy files by file extension, preserving directory structure
+Recursively finds all '*.pdf' files and folders in a current folder and removes them without prompting.
+Recursively finds all files in a current folder excluding already compressed files and compresses them with level 9.
+Recursively finds all folders in a current folder that contain files like '.git'.
+Recursively finds and compresses all files in the directory '/path/to/dir'
+Recursively finds file some_file_name.xml file and prints strings with "PUT_YOUR_STRING_HERE" preceding each found string with file name.
+Recursively lists all *.py and *.html files in a current folder.
+Recursively lists all files in a current folder in long format, sorting by modification time.
+Recursively move all files in "/path/to/srcdir" to "dest/"
+Recursively removes all files like '*.r*' in current folder and removes folders with such files if they become empty.
+Recursively set all permissions under "../tools" to 777
+Recursively set all permissions under "/folder" to 755
+redirect output inside screen session
+Redirect stderr to stdout and write to the console and "/dev/null"
+Remount the root file system with read and write permission
+Remount subtree "/outside" to "/inside" as a bind
+Remount subtree "/usr/bin" on "/path/to/chroot/jail/usr/bin" as a bind
+Remove all *~ files under current directory with confirmation prompt
+Remove all .sh files in the current directory tree whose names begin with "t"
+Remove all directories in and below the current directory
+Removes all empty folders under path '/thepath', printing info message on each operation.
+Removes all empty folders within $DELETEDIR folder.
+Remove all files under /home/user/Maildir/.SPAM/cur
+Remove all files under /home/user/Maildir/.SPAM/cur
+Remove all files under /home/user/Maildir/.SPAM/cur
+Removes all listed folders with content in sudo mode.
+Removes empty folder 'edi' and 'edw'.
+Remove everything in a current folder prompting user on each action.
+Removes files ~/.android/adbkey and ~/.android/adbkey.pub without prompting.
+Removes the last 2 lines from a file
+Remove the last 3 characters from 987654321, keeping only 987654
+Remove the path $1 from the PATH environment variable
+Remove trailing spaces from all files under current directory
+Rename all *.jpg files to *.jpg$.jpg files under current directory
+Rename all *.jpg files to *_LRG.jpg files under temp/large directory
+Rename all *.txt regular files in the current directory tree to *.abc
+Rename uppercase file or folder name $1 to lower case name
+Report all C language source code files under the current directory
+Reports count of characters in the value of ${FOO} variable as follows:  "length(FOO)==<counted number of characters>"
+Reports count of processors in system.
+Reports count of processors in system.
+Represent the current time as seconds since epoch and save it to variable 'TODAY'
+Reverse the text in $input by taking each 4 characters as each units and save the result in variable 'output'
+Run "command" on server "host" as user "user"
+run command "dnf install glibc.i686" as user root
+run command 'bash --rcfile <(echo "source ~/.bashrc; source myfile")' as user root with a bash shell
+Run command 'su whoami' on host 'remotehost'
+run programm "/home/oracle/database/runInstaller" as user oracle in background
+Run script `deslash.sh' on all thumb.png files in the current directory tree
+Run script `fixname.sh' for each regular file from the current directory tree
+Run the sh "for" construct in a subshell (runs ./myscript.sh for each file whose name ends with .fasta in mydir) - the subshell is immune to SIGHUP signals sent to it, and the output is redirected to "output.txt".
+Run svn checkout in every directory named 'needed_dir' under repository_dir/$f
+Run vi with all btree*.c files under current directory
+Save the date 222 days before today to the variable 'date_222days_before_TodayDay'
+Save the day of the year from the time string "20131220" to variable 'DATECOMING'
+Save the FQDN host name of the system in variable "hnd"
+Saves invoked command 'check_script_call=$(history |tail -1|grep myscript.sh )' in variable 'check_script_call', preceeding by its number in history.
+Save the list of all .py files under and below the current directory to output.txt
+Save the list of files modified within a fortnight ago to `deploy.txt'
+Search "mygzfile.gz" for "string to be searched"
+Search the /dir directory tree for files whose names match regular expression '.*2015.*\(album.*\|picture.*\)'
+Search  all directory from /usr downwards for files whose inode number is 1234 and print them .
+search all jpg files in current folder
+Search the current directory for all regular files executable by 'user', 'group', and 'others'
+Search the current directory recursively for regular files last changed less than 2 days ago
+Search the current directory recursively for regular files modified 2 days ago
+Search the current directory recursively for regular files with the extension given as variable $extension
+Search the current directory tree for *.wav files that have "export" in their pathnames
+Search the current directory tree for .rb files ignoring the "./vendor" subdirectory
+Search the current directory tree for files containing "string" in their path names
+Search the current directory tree for regular files last changed more than 14 days ago
+Search the current directory tree for regular files that were changed $FTIME days ago
+Search the current directory tree for regular files whose names end with "keep.${SUFFIX}", where $SUFFIX is a shell variable
+Search the current directory tree for symbolic links named "link1"
+Search directory /Users/david/Desktop/ recursively for regular files
+Search directory tree $DIR for *.txt files
+Search directory tree $DIR for *.txt files
+Search directory tree $DIR for *.txt files
+Search directory tree $DIR for *.txt files
+Search the directory tree /tmp for regular files using zero delimiter for output
+search the entire file system and save all the core file paths into a file
+Search the files from the current directory tree for "foo"
+Search the files from the current directory tree for "foo"
+Search the files from the current directory tree for "foo"
+Search for 'It took' in all $srch1* (case insensitive) files under current directory
+Search for 'It took' in all $srch1* (case insensitive) files under current directory and run the sed script 'N;s/(.*)\n(.*)/\2 \1/' on the output and redirect the final output to temp1 file
+Search for 'Text To Find' in all regular files under current directory tree and show the matched files
+Search for .zip files that are larger than 100M found anywhere in the file system and delete those files.
+search for a file "file" in current folder and if the file is found quit !
+search for all the c files in the current folder
+search for all the directories in the current directory and do not search in sub directories
+Search for all files with the same inode number 41525360
+search for all regular/normal files in current folder and display all the files which contain 16 lines
+search for all the regular/normal mp3 files in the file system and create a directory int /mt/mp3/ with the basename of the mp3 file
+search for bash and rsync files in the entire file system excluding search in /usr folder and discard all the errors
+search for the directory "ora10" in the entire file system
+search for the file ".user.log" and display its parent directory
+search for the file ".user.log" in a folder
+search for the file "myletter.doc" in the home folder
+Search for files/directories that are readable for everybody, have at least one write bit set but are not executable for anybody
+Search for files/directories with the case insensitive pattern anaconda.* in var/log directory
+Search for files/directories with the case insensitive pattern anaconda.* in var/log directory and create an archive (file.tar) of the last file found
+Search for files specifying the maximum depth of the search
+search for the files with the name "temp" and which have not been accessed in the last 7*24 hours in the /usr folder
+search for the folder .dummy and remove it from the folder "Test folder"
+search for the folder .dummy and remove it from the folder "Test folder"
+Search for line 111 in file "active_record.rb" with 2 lines of context
+Search for the pattern '^use strict' in all *.pl files under current directory
+search for the pattern in all the regular/normal files in the entire file system
+Search for the regex expanded by the variable $SEARCH in all regular files under $DIR directory tree
+Search for the regex expaned by the variable $SEARCH in all regular files under $DIR directory tree
+search for regular files in the current folder which path is not  "./.*" and not "./*/.*"
+search for the text file "file.txt" and display its parent directory
+search for text files in the folders /home/hobbes/ /home/calvin/
+search for text files in the folders /home/hobbes/ /home/calvin/ and discard all the errors
+Search the home directory tree for files last modified less than 2 days ago or newer than file "filename"
+Search in the current directory and all sub-directories except ./D for the file named hi.dat
+Search in the current directory and all sub-directories except ./D for the file named hi.dat.
+Search  in current directory downwards all files whose size is greater than 10 bytes .
+search  in root  ( / ) directory downwards all files which have less than 2 links.
+Search my_folder recursively for text files containing "needle text"
+Search the regular files of the current directory tree for string "texthere"
+Search the regular files of the current directory tree for string "whatever"
+Search the regular files of the current directory tree for string "whatever"
+Search the regular files of the current directory tree for string "whatever"
+Search the system for files and directories owned by user `admin'
+Search user1's home directory tree for *.bin files
+See what files are executable by the file's owner and group
+Send reverse requests to get domain name for each address in 'my_ips' list
+Send SIGTERM signal to all processes using TCP port 8080, requesting them to terminate.
+Serach  in root directory all files which  have more than 2 links.
+set alias ":" for command 'xargs -I{}'
+set alias "foo" for command "$'echo A \'*\' is born at $(date)'"
+set alias "your_env" for command 'source ~/scripts/your_env.sh'
+Set the executable bit for all users on all regular files from directories arch/x86/usr/sbin, arch/x86/usr/X11R6/bin, usr/sbin/
+Set up SSH connection forwarding in the background with no terminal or command execution from localhost port 8888 to "proxyhost" port 8888 and a reverse connection from "officefirewall" port 22222 to "localhost" port 22
+Set variable 'rav' to the contents of 'var' spelled backwards.
+Set variable BZIP2_CMD to the full path of command "bzip2"
+Shifts the positional parameters to the left by n.
+show all directories in the current folder excluding those that are present in the sub directories of media, images and backups
+Show filename and filetype description of all PHP files in all directories contained in current directory whose name or filetype description includes "UTF"
+Show the list of files modified less than a minute ago
+Show mv commands to move all *.pdf.marker files and their corresponding *.pdf files under ${INPUT_LOCATION} to ${OUTPUT_LOCATION}
+Show process tree with command-line arguments of a process that has id 20238.
+Shows strings that NOT match regex '^($|\s*#|\s*[[:alnum:]_]+=)'
+Show total memory used by processes in MB
+Silently read a line into variable "passwd" with prompt "Enter your password: "
+Silently read a single character into variable "REPLY"
+Silently read standard input until the escape key is pressed ignoring backslash escapes and using the prompt $'Press escape to continue...\n'
+sleep for 1 second
+Sort "file" using a buffer with a size 50% of main memory
+Sort a file 'file' preserving only unique lines and change the file in-place
+sort and display the unique lines display the contents of all the files that have been modified in the last 91 days and not in the last 2 days
+Sort content of files 'file1' and 'file2' by second of dot-separated fields.
+Split "mybigfile.txt" into files of at most 200000 lines each
+split $SOURCE_FILE" into pieces per 100 lines
+ssh into default vagrant host without running "vagrant ssh" and without an interactive ssh shell
+Starts new detached tmux session and runs command $CMD within.
+Starts new detached tmux session and runs command $CMD within.
+Sum the total content size of the extracted files in "archive.tar.gz"
+Synchronize via ssh "user@source-server:/somedirA/" to "somedirB/" with compressed data during transmission and display progress
+Unset (delete) all environment variables.
+Unsets all environment variables.
+Unsets all environment variables.
+Unsets array member with index 2.
+Unsets environment variable represented as var=value by $a.
+Unzip and expand tar archive "compressFileName"
+update the permission of all the files in the folder /u/netinst to 500
+Update timestamps of all files (not directories) under current directory. Also works on older Unix systems with obsolete 'find' command.
+Use "/var/log/wtmp" and print IPs and search for "^msw.*127.0.0.1"
+Use "composer validate" command on all composer.json files
+using exec in find command to dispaly the searched files
+Uses GNU tool 'time' to estimate time consumed by command 'command' and redirects output to file
+Uses the time utility to report only real execution time of 'ls' command.
+Use the uncompressed contents of "blah.gz" as input to "some_command"
+Use the uncompressed contents of "blah.gz" as input to "some_command"
+Verbosely change ownership of "$file" to "root"
+verbosely create intermediate directoriy tmp as required and directory boostinst
+Write "hey hey, we're the monkees" to standard output and as input to to "gzip --stdout" saved to "my_log.gz"
+Write '"myname="Test"' to the console and append to "$CONFIG" as root
+Write differences between files "a.txt" and "b.txt" side-by-side and not outputting common lines to file "c.txt".
+Write differences between files "file1" and "file2" to "file3".
+Write lines 16224 through 16482 of "file.in" to "file.out"
+Write the output of "input_prog" to standard output and error on console and as input to command "my_editor"
+Write unbuffered output of "python -u client.py" to standard output and to "logfile"
