@@ -1,0 +1,5 @@
+Add "new." to the beginning of the name of "original.filename", renaming it to "new.original.filename".
+Add "new." to the beginning of the name of "original.filename", renaming it to "new.original.filename".
+Add "prefix_" to every non-blank line in "a.txt"
+Add a number prefix followed by ')' to each line in "$string"
+Append the contents of "file.txt" to the current in-memory history list
