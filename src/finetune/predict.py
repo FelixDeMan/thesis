@@ -54,7 +54,9 @@ def predict_file(model, prompts_file, n, output_file):
     with open(output_file, "w") as f:
         for i, completion in enumerate(completions):
             for version in completion:
-                f.write(version + "|||")
+                # Escape newline characters
+                escaped_version = version.replace("\n", "\\n")
+                f.write(escaped_version + "|||")
             f.write("\n")
 
 
