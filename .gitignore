@@ -6,6 +6,7 @@ __pycache__/
 *$py.class
 
 wandb/
+memory/
 
 # C extensions
 *.so
