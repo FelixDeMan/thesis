@@ -12,6 +12,7 @@ def print_usage(model):
         "ada": 0.0016,
         "babbage": 0.0024,
         "curie": 0.0120,
+        "gpt-3.5-turbo": 0.002,
     }
 
     # Calculate total cost
@@ -24,20 +25,37 @@ def print_usage(model):
 # Getting top n completions from a finetuned model
 # returns a list of strings
 def get_top_n_completions(model, prompt, n=1, separator="\n\n###\n\n", stop="||##||"):
-    response = openai.Completion.create(
-        prompt=prompt + separator,
-        model=model,
-        max_tokens=250,
-        temperature=0.7,
-        top_p=1.0,
-        frequency_penalty=0.0,
-        presence_penalty=0.0,
-        stop=[stop],
-        n=n,
-    )
     global TOKEN_USAGE
-    TOKEN_USAGE += response["usage"]["total_tokens"]
-    return [completion["text"].strip() for completion in response["choices"]]
+    if model != "gpt-3.5-turbo":
+        response = openai.Completion.create(
+            prompt=prompt + separator,
+            model=model,
+            max_tokens=250,
+            temperature=0.7,
+            top_p=1.0,
+            frequency_penalty=0.0,
+            presence_penalty=0.0,
+            stop=[stop],
+            n=n,
+        )
+        TOKEN_USAGE += response["usage"]["total_tokens"]
+        return [completion["text"].strip() for completion in response["choices"]]
+    else:
+        completions = []
+        setup = "You translate Natural Language prompts to Bash commands. You reply with a single Bash command no matter what. Provide only a single command and no explanations."
+
+        for i in range(n):
+            response = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo",
+                messages=[
+                    {"role": "system", "content": setup},
+                    {"role": "user", "content": prompt},
+                ],
+            )
+            TOKEN_USAGE += response["usage"]["total_tokens"]
+            completions.append(response["choices"][0]["message"]["content"].strip())
+
+        return completions
 
 
 def predict_file(model, prompts_file, n, output_file):
@@ -93,6 +111,8 @@ def main():
         model = "babbage:ft-personal:babbage-3-epochs-2023-04-18-11-00-05"
     elif args.model == "curie":
         model = "curie:ft-personal:curie-3-epochs-2023-04-18-11-41-28"
+    elif args.model == "gpt-3.5-turbo":
+        model = "gpt-3.5-turbo"
     else:
         raise ValueError("Invalid model name:", args.model)
 

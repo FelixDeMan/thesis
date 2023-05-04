@@ -1,0 +1,5 @@
+mv original.filename new.original.filename|||mv original.filename new.original.filename|||```\nmv original.filename new.original.filename\n```|||
+mv original.filename new.original.filename|||mv original.filename new.original.filename|||mv original.filename new.original.filename|||
+sed -i '/./s/^/prefix_/' a.txt|||sed -i '/^$/! s/^/prefix_/g' a.txt|||sed -i '/./s/^/prefix_/' a.txt|||
+echo "$string" | nl -nln -s ')'|||echo "$string" | nl -s ") "|||echo "$string" | nl -s ') '|||
+history -r file.txt|||history -r file.txt|||history -r file.txt|||
