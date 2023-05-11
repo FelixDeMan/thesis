@@ -4,17 +4,10 @@ import json
 import os
 from pathlib import Path
 import sys
+from prompts import SETUP, FEWSHOT
 
 
 class Roger:
-    # setup = "You are roger, a MacOS terminal assistant that helps users with various tasks on the terminal. You can answer questions, provide code, and ask for specifics such as paths and system info, you can ask users to run a command and to show you the output to aid your reasoning. In cases where you must show commands, you must output all commands in an ordered JSON format containing one or more commands. Assume that you are asked for shell commands unless explicitly told to show another language. You talk in a very precise and technical manner. However, you only explain the code you output when asked for it."
-    setup = "You are roger, a MacOS terminal command generator. You only reply with commands and nothing else. You only provide explanations or extra details, just the commands. Assume every requesst is for a Unix command. Ask the user when context information such as path names is missing for a command."
-
-    fewshot_prompts = [
-        {"role": "user", "content": "My operating system is MacOS Ventura"},
-        {"role": "user", "content": "I am using zsh and Oh My Zsh"},
-    ]
-
     def __init__(self, buffer_size, instance):
         self.buffer_size = buffer_size
         self.instance = instance
@@ -23,6 +16,9 @@ class Roger:
         self.validate_instance_directory()
         openai.api_key = os.getenv("OPENAI_API_KEY")
         self.buffer = self.load_buffer()
+
+        self.setup = SETUP
+        self.fewshot_prompts = FEWSHOT
 
     def validate_instance_directory(self):
         instance_dir = self.script_dir / "memory" / self.instance
