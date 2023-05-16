@@ -1,10 +1,11 @@
 import openai
-from colors import Colors
 import json
 import os
 from pathlib import Path
 import sys
-from utils import SETUP, FEWSHOT, METRICS
+
+from src.agent.utils import SETUP, FEWSHOT, METRICS
+from src.agent.colors import Colors
 
 
 class Roger:
@@ -20,7 +21,6 @@ class Roger:
         self.setup = SETUP
         self.fewshot_prompts = FEWSHOT
         self.metrics = self.load_metrics()
-        print(self.metrics)
 
     def validate_instance_directory(self):
         instance_dir = self.script_dir / "memory" / self.instance
@@ -95,7 +95,17 @@ def main():
 
     user_message = {"role": "user", "content": user_input}
 
-    content, response = roger.completion(user_message)
+    # Put this in a try catch block
+    try:
+        content, response = roger.completion(user_message)
+    except Exception as e:
+        # Print something went wrong with roger in red
+        print(
+            Colors.RED
+            + "Something went wrong with roger. Delete the memory file if this persists."
+            + Colors.RESET
+        )
+        exit()
 
     assistant_message = {"role": "assistant", "content": content}
 
