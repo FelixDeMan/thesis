@@ -105,6 +105,7 @@ def main():
             + "Something went wrong with roger. Delete the memory file if this persists."
             + Colors.RESET
         )
+        print(e)
         exit()
 
     assistant_message = {"role": "assistant", "content": content}
