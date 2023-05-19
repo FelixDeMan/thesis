@@ -9,7 +9,7 @@
 ## `roger` (CLI agent):
 ### Installation
 1. Alias the script in your `.bashrc`/`.zshrc` like this:
-    * `alias roger="[path_to_venv]/venv/bin/python [path_to_repo]/thesis/src/agent/roger.py"`
+    * `alias roger="noglob [path_to_venv]/venv/bin/python [path_to_repo]/thesis/src/agent/roger.py"`
 2. Also add the repository to your `PYTHONPATH`
     * `export PYTHONPATH=$PYTHONPATH:[path_to_repo]`
 
