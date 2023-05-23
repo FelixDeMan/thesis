@@ -4,8 +4,11 @@ import os
 from pathlib import Path
 import sys
 
+
 from src.agent.utils import SETUP, FEWSHOT, METRICS
 from src.agent.colors import Colors
+
+USERNAME = "test"
 
 
 class Roger:
@@ -78,20 +81,54 @@ class Roger:
             + self.fewshot_prompts
             + self.buffer
             + [message],
+            temperature=0.2,
+            top_p=0.1,
         )
         content = response["choices"][0]["message"]["content"]
 
         return content, response
 
 
-def main():
-    roger = Roger(5, "test")
+def wipe_memory(username):
+    script_dir = Path(__file__).parent.absolute()
+    memory_dir = script_dir / "memory" / username
+    # check if there are any backups
+    backups = [f for f in memory_dir.iterdir() if f.name.endswith(".bak")]
+    # if there  are no backups, renaame the messages file to messages.1.bak
+    if len(backups) == 0:
+        messages_file = memory_dir / "messages.json"
+        messages_file.rename(memory_dir / "messages.1.bak")
+    # if there are backups, rename the messages file to messages.n+1.bak
+    else:
+        n = len(backups)
+        messages_file = memory_dir / "messages.json"
+        messages_file.rename(memory_dir / f"messages.{n+1}.bak")
+    # create a new messages file
+    messages_file = memory_dir / "messages.json"
+    with messages_file.open("w") as f:
+        json.dump([], f)
 
+
+def log_error(error):
+    script_dir = Path(__file__).parent.absolute()
+    error_file = script_dir / "errors.log"
+    with error_file.open("a") as f:
+        f.write(error)
+        f.write("\n")
+
+
+def main():
     # Check if there are command line arguments
-    if len(sys.argv) > 1:
+    if "--wipe-chat-history-and-backup" in sys.argv:
+        wipe_memory(USERNAME)
+        # print("wiping memory")
+        exit()
+    elif len(sys.argv) > 1:
         user_input = " ".join(sys.argv[1:])
     else:
         user_input = input(">>> ")
+
+    roger = Roger(15, USERNAME)
 
     user_message = {"role": "user", "content": user_input}
 
@@ -102,10 +139,10 @@ def main():
         # Print something went wrong with roger in red
         print(
             Colors.RED
-            + "Something went wrong with roger. Delete the memory file if this persists."
+            + "Something went wrong with roger. This is likely an issue with the OpenAI API. You can retry your command and it will probably work. Check errors.log for more information."
             + Colors.RESET
         )
-        print(e)
+        log_error(str(e))
         exit()
 
     assistant_message = {"role": "assistant", "content": content}

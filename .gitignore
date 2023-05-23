@@ -6,7 +6,11 @@ __pycache__/
 *$py.class
 
 wandb/
-memory/
+
+metrics/test/
+
+error.log
+
 .vscode/
 
 # C extensions

@@ -1,0 +1,41 @@
+TASK A
+1. grep -o 'Romeo' Romeo.txt | wc -l
+2. grep -oi 'Romeo' Romeo.txt | wc -l
+3. wc -c Romeo.txt
+4. tr -cd '[:alpha:]' < Romeo.txt | fold -w1 | sort | uniq -c
+5. first get character count:wc -c Romeo.txt
+   then vowel count: tr -cd 'aeiouAEIOU' < Romeo.txt | wc -c
+   then those can be divided
+6. grep -oE '\b\w+\b' Romeo.txt | awk '{ print length, $0 }' | sort -nr | head -1 | awk '{print $2}' 
+   unenforceability
+
+TASK B
+1. To check one file: sort -c -t $'\t' -k1 england.tsv
+To check all files: for file in *.tsv; do sort -c -t $'\t' -k1 "$file"; done
+- Italy and Turkey are not sorted, and should be deleted.
+
+
+2.
+For one file: sort -t $'\t' -k2 -nr england.tsv | head -n 3
+For all files: for file in *.tsv; do echo "$file:"; sort -t $'\t' -k2 -nr "$file" | head -n 3; done
+To create the targets file: for file in *.tsv; do sort -t $'\t' -k2 -nr "$file" | head -n 3 | cut -f1 >> targets.txt; done
+
+- The richest people are:
+    * Alexandra
+    * Baptiste
+    * Brigitte
+    * Carl
+    * Daniel
+    * Edgar
+    * Elizabeth
+    * Françoise
+    * Guilhermeb
+
+3. openssl enc -aes-256-cbc -salt -in targets.txt -out targets.enc -pass pass:geronimo
+
+TASK C
+1. ssh john@localhost -p 2222 "ls /home/john"
+2. scp -r -P 2222 "john@localhost:/home/john/a*" ./
+3. chmod 755 wow.sh
+4. To push the script: scp -P 2222 wow.sh john@localhost:/home/john/
+   To run the script remotely: ssh john@localhost -p 2222 "./wow.sh"
