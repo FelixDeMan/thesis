@@ -8,6 +8,13 @@ FILE_NAME = "results.csv"
 
 questions = [
     {"type": "text", "msg": "Name and last name:", "column_name": "name"},
+    {"type": "text", "msg": "What is your age (integer):", "column_name": "age"},
+    {
+        "type": "select",
+        "msg": "What is your sex?",
+        "choices": ["M", "F"],
+        "column_name": "sex",
+    },
     {
         "type": "text",
         "msg": "How many years of experience do you have with Unix shell languages (Bash, zsh, etc.) (provide a whole number):",
