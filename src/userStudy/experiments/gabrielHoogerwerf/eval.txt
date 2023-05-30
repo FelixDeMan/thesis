@@ -1,0 +1,7 @@
+Comments:
+- participant forgot typing roger multiple times
+- A3 For the encryption question, participant copy and pasted the instruction 
+- A4 roger generates an incorrect command for deleting everything except a specific file from a dir
+
+Hints:
+- B2 had to give a hint about using quotes (roger's faulty generation)
