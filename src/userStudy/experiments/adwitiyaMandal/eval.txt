@@ -1,3 +1,0 @@
-Comments:
-- Had to intervene in task B, it might be a good idea to simplify the task since all participants struggled with this.
-- Could not generate targets.txt, gave hints.
