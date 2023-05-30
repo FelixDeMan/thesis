@@ -7,8 +7,8 @@ __pycache__/
 
 wandb/
 
-error.log
-**/memory/test/*
+error.logs
+/src/agent/memory/test/
 
 .vscode/
 
