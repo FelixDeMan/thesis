@@ -1,0 +1,11 @@
+Comments:
+Participant started out by copy and pasting prompts, then got more creative as the tasks got more complex.
+Participant could not complete TASK C.2 (syntax error by  roger)
+Participant showed erroneous output to roger in hopes of getting improved commands.
+
+# GENERATED          :  33
+# EXECUTED CORRECT   :  15
+# EXECUTED INCORRECT :  9
+# EXECUTED N/A       :  0
+# DID NOT EXECUTE    :  9
+

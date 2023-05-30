@@ -1,0 +1,5 @@
+name,age,sex,exp_years,proficiency,easy_use,understood,answers_useful,additional_info,explain_output,robustness,workflow_improvement,generation_useful,efficiency,response_time,confidence,continue_using,learned_commands,uncertain_command,improvement_comments,timestamp
+Jan-Felix De Man,26,M,2,2,5,4,4,2,I did not ask roger to explain its output during the study,4,4,5,5,4,4,5,True,True,input limitations,2023-05-23 18:41:22
+Omer Kirmaz,23,M,2,2,5,5,5,3,I did not ask roger to explain its output during the study,4,5,5,5,2,5,5,True,True,response time too slow,2023-05-24 18:16:47
+Laura Latorre,23,F,4,1,5,4,4,2,3,4,5,4,4,3,4,5,True,True,The time response could be improved,2023-05-25 15:52:54
+Adwitiya Mandal,27,F,1,2,5,4,5,3,I did not ask roger to explain its output during the study,5,5,5,5,4,5,5,True,True,No,2023-05-25 18:36:01
