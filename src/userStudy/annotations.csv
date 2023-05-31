@@ -1,2 +1,3 @@
-name,invoked,generated,correct,incorrect,na,A_time,B_time
-Gabriel Hoogerwerf,26,27,11,8,0,32,19
+name,invoked,generated,correct,incorrect,A_time,B_time
+Gabriel Hoogerwerf,26,27,11,8,32,19
+Ryan Saeta,14,12,6,2,22,8
